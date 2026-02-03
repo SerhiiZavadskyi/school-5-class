@@ -3,7 +3,6 @@
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
-	"homepage": "https://serhiizavadskyi.github.io/school-5-class/",
 	"scripts": {
 		"dev": "vite",
 		"build": "tsc -b && vite build",
