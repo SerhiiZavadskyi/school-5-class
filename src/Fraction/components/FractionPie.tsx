@@ -1,4 +1,11 @@
-const FractionPie = ({ numerator, denominator, color = "text-blue-500", size = 100 }) => {
+interface FractionPieProps {
+	numerator: number;
+	denominator: number;
+	color?: string;
+	size?: number;
+}
+
+const FractionPie: React.FC<FractionPieProps> = ({ numerator, denominator, color = "text-blue-500", size = 100 }) => {
 	const radius = 40;
 	const center = 50;
 	const paths = [];

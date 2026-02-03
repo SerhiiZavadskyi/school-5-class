@@ -8,7 +8,7 @@ const Fraction = () => {
 	const [score, setScore] = useState(0);
 	const [showFeedback, setShowFeedback] = useState(false);
 	const [isCorrect, setIsCorrect] = useState(false);
-	const [selectedOption, setSelectedOption] = useState(null);
+	const [selectedOption, setSelectedOption] = useState<string | null>(null);
 	const [gameCompleted, setGameCompleted] = useState(false);
 
 	// --- Interactive Theory States ---
@@ -182,7 +182,7 @@ const Fraction = () => {
 		},
 	];
 
-	const handleAnswer = (optionId) => {
+	const handleAnswer = (optionId: string) => {
 		setSelectedOption(optionId);
 		const correct = optionId === quests[currentLevel].correct;
 		setIsCorrect(correct);
